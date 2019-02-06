@@ -1,6 +1,3 @@
-# Kernel SVM
-
-# Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -32,7 +29,7 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
-# Visualising the Training set results
+# Visualising the Training set results...........Most interesting part
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
@@ -50,7 +47,7 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
-# Visualising the Test set results
+# Visualising the Test set results........Most interesting part
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_test, y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
